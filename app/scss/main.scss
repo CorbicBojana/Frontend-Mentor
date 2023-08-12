@@ -13,11 +13,166 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
-  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  font-family: 'Epilogue', sans-serif;
+  background-color: $white_color;
 }
 
-.container {
-  max-width: 980px;
-  margin: 0 auto;
+//==========HEADER
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  padding: 20px;
+
+  .list {
+    position: absolute;
+    right: 0;
+    left: -100%;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px $gray_color;
+    border-radius: 10px;
+
+    .list_item {
+      margin-bottom: 16px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      img {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .list_last {
+    right: -50%;
+    left: 0;
+  }
+
+  .header_nav_left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+
+    .nav {
+      margin-left: 80px;
+
+      .nav_list {
+        display: flex;
+
+        .nav_list_item {
+          margin-left: 40px;
+          position: relative;
+
+          &:first-child {
+            margin-left: 0;
+          }
+
+          .nav_list_item_link {
+            color: $gray_color;
+
+            &:hover {
+              cursor: pointer;
+              color: $black_color;
+            }
+
+            .arrow_up {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .header_nav_right {
+    margin: 20px;
+
+    .nav_list {
+      display: flex;
+
+      .nav_list_item {
+
+        &:last-of-type .nav_list_item_link {
+          border: 2px solid $gray_color;
+          border-radius: 10px;
+        }
+
+        .nav_list_item_link {
+          padding: 10px 20px;
+          color: $gray_color;
+
+          &:hover {
+            cursor: pointer;
+            color: $black_color;
+            border-color: $black_color;
+          }
+        }
+      }
+    }
+  }
+}
+
+//==========MAIN SECTION
+.main {
+  display: flex;
+  height: calc(100vh - 120px);
+
+  .main_intro, .main_hero {
+    width: 50%;
+  }  
+
+  .main_intro {
+    margin: 14vh 20vh;
+
+    h1 {
+      color: $black_color;
+      font-size: 72px;
+      font-weight: bold;
+      margin-bottom: 40px;
+    }
+
+    p {
+      color: $gray_color;
+      line-height: 1.4;
+      margin-bottom: 40px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 20px 30px;
+      background-color: $black_color;
+      color: $white_color;
+      border: 2px solid transparent;
+      border-radius: 16px;
+      text-decoration: none;
+      margin-bottom: 40px;
+
+      &:hover {
+        cursor: pointer;
+        background-color: $white_color;
+        color: $black_color;
+        border: 1px solid $black_color;
+      }
+    }
+  }
+
+  .main_hero {
+    background: url("../../dist/img/image-hero-desktop.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .main_intro_logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  } 
 }

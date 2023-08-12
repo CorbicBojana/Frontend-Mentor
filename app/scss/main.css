@@ -1,0 +1,188 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: "Epilogue", sans-serif;
+  background-color: hsl(0, 0%, 98%);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  padding: 20px;
+}
+.header .list {
+  position: absolute;
+  right: 0;
+  left: -100%;
+  margin-top: 10px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px hsl(0, 0%, 41%);
+  border-radius: 10px;
+}
+.header .list .list_item {
+  margin-bottom: 16px;
+}
+.header .list .list_item:last-child {
+  margin-bottom: 0;
+}
+.header .list .list_item img {
+  margin-right: 10px;
+}
+.header .list_last {
+  right: -50%;
+  left: 0;
+}
+.header .header_nav_left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+.header .header_nav_left .nav {
+  margin-left: 80px;
+}
+.header .header_nav_left .nav .nav_list {
+  display: flex;
+}
+.header .header_nav_left .nav .nav_list .nav_list_item {
+  margin-left: 40px;
+  position: relative;
+}
+.header .header_nav_left .nav .nav_list .nav_list_item:first-child {
+  margin-left: 0;
+}
+.header .header_nav_left .nav .nav_list .nav_list_item .nav_list_item_link {
+  color: hsl(0, 0%, 41%);
+}
+.header .header_nav_left .nav .nav_list .nav_list_item .nav_list_item_link:hover {
+  cursor: pointer;
+  color: hsl(0, 0%, 8%);
+}
+.header .header_nav_left .nav .nav_list .nav_list_item .nav_list_item_link .arrow_up {
+  display: none;
+}
+.header .header_nav_right {
+  margin: 20px;
+}
+.header .header_nav_right .nav_list {
+  display: flex;
+}
+.header .header_nav_right .nav_list .nav_list_item:last-of-type .nav_list_item_link {
+  border: 2px solid hsl(0, 0%, 41%);
+  border-radius: 10px;
+}
+.header .header_nav_right .nav_list .nav_list_item .nav_list_item_link {
+  padding: 10px 20px;
+  color: hsl(0, 0%, 41%);
+}
+.header .header_nav_right .nav_list .nav_list_item .nav_list_item_link:hover {
+  cursor: pointer;
+  color: hsl(0, 0%, 8%);
+  border-color: hsl(0, 0%, 8%);
+}
+
+.main {
+  display: flex;
+  height: calc(100vh - 120px);
+}
+.main .main_intro, .main .main_hero {
+  width: 50%;
+}
+.main .main_intro {
+  margin: 14vh 20vh;
+}
+.main .main_intro h1 {
+  color: hsl(0, 0%, 8%);
+  font-size: 72px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.main .main_intro p {
+  color: hsl(0, 0%, 41%);
+  line-height: 1.4;
+  margin-bottom: 40px;
+}
+.main .main_intro .btn {
+  display: inline-block;
+  padding: 20px 30px;
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 98%);
+  border: 2px solid transparent;
+  border-radius: 16px;
+  text-decoration: none;
+  margin-bottom: 40px;
+}
+.main .main_intro .btn:hover {
+  cursor: pointer;
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 8%);
+  border: 1px solid hsl(0, 0%, 8%);
+}
+.main .main_hero {
+  background: url("../../dist/img/image-hero-desktop.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main .main_intro_logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}/*# sourceMappingURL=main.css.map */
